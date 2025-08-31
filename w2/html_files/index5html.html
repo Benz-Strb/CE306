@@ -1,0 +1,69 @@
+<html>
+    <head>
+        <style>
+            a {
+                color: blue;
+                text-decoration: none;
+            }
+
+            /* เมื่อเลื่อนเมาส์ชี้ไปที่ลิงก์ */
+            a:hover {
+                color: pink;
+                text-decoration: underline;
+                font-weight: bold;
+            }
+
+            /* ลิงก์ที่เคยเยี่ยมชมแล้ว */
+            a:visited {
+                color: lightblue;
+            }
+
+            /* สิ่งที่กำลังถูกคลิก */
+            a:active {
+                color: lightgreen;
+            }
+
+            div p:first-child {
+                background-color: lightslategray;
+                padding: 10px;
+                border: 1px dashed black;
+            }
+
+            div p:last-child {
+                background-color: lightcyan;
+                padding: 10px;
+                border: 1px dashed blue;
+            }
+
+            input[type="text"]:focus {
+                border-color: green;
+                box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+                outline: none;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>Pseudo-classes Demo</h1>
+
+        <h2>ลิงก์</h2>
+        <p>ลองวางเมาส์เหนือลิงก์แล้วคลิกดู</p>
+        <a href="http://www.google.com" target="_blank">Google</a><br>
+        <a href="http://www.w3schools.com" target="_blank">W3Schools</a><br>
+        <a href="#">ลิงก์ที่ไม่ไปไหน</a>
+
+        <h2>ย่อหน้าใน Div</h2>
+        <div>
+            <p>ย่อหน้านี้คือ **First-child** ของ div (จะมีพื้นหลังสีเทา)</p>
+            <p>ย่อหน้านี้เป็นย่อหน้าปกติ</p>
+            <span>นี่คือ span</span>
+            <p>ย่อหน้านี้คือ **Last-child** ของ div (จะมีพื้นหลังสีฟ้า)</p>
+        </div>
+
+        <h2>ช่องกรอกข้อมูล</h2>
+        <label for="username">ชื่อผู้ใช้ :</label>
+        <input type="text" id="username" placeholder="พิมพ์ชื่อของคุณ">
+        <label for="email">อีเมล :</label>
+        <input type="email" id="email" placeholder="พิมพ์อีเมลของคุณ">
+    </body>
+</html>

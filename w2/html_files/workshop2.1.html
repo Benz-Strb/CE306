@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="th">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>workshop 2.1</title>
+        <link rel="stylesheet" href="style.css">
+        <style>
+            body {
+                font-family: 'Times New Roman', Times, serif;
+                background-color: lightgray;
+            }
+            .card-container {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 20px;
+                max-width: 1200px;
+                width: 100%;
+                height: auto
+            }
+            .card {
+                background-color: whitesmoke;
+                border-radius: 10px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                padding: 15px;
+                flex-basis: 300px;
+                flex-grow: 1;
+                max-width: 300px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: flex-start;
+                overflow: hidden;
+            }
+            .image_on_card {
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                max-width: 100%;
+                height: auto
+            }
+            .botton {
+                background-color: dodgerblue;
+                border-radius: 5px;
+                padding: 2px;
+            }
+            a:hover {
+                background-color: violet;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="card-container">
+            <div class="card">
+                <img src="D:\CE306\w2\รูปบนเว็บ\ครัวซองต์.jpg" alt="Product 1" class="image_on_card">
+                <h3>Croissant</h3>
+                <p>French bread is crispy, flaky, and smells like butter.</p>
+                <a href="#" class="botton">Read More</a>
+            </div>
+
+            <div class="card">
+                <img src="D:\CE306\w2\รูปบนเว็บ\บาแก็ต.jpg" alt="Product 2" class="image_on_card">
+                <h3>Baguette</h3>
+                <p>A long French baguette, with a hard crispy crust and soft inside.</p>
+                <a href="#" class="botton">Read More</a>
+            </div>
+
+            <div class="card">
+                <img src="D:\CE306\w2\รูปบนเว็บ\เบเกิล.jpg" alt="Product 3" class="image_on_card">
+                <h3>Bagel</h3>
+                <p>The round bread is boiled before baking, which gives it a chewy and bouncy texture. It's great to eat with cream cheese or smoked salmon!</p>
+                <a href="#" class="botton">Read More</a>
+            </div>
+
+            <div class="card">
+                <img src="D:\CE306\w2\รูปบนเว็บ\โฮลวีต.jpg" alt="Product 4" class="image_on_card">
+                <h3>Whole wheat bread</h3>
+                <p>Whole wheat bread made with bran and germ mixed in, it's got a coarse texture and is really healthy.</p>
+                <a href="#" class="botton">Read More</a>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang = 'th'>
+<head>
+    <meta charset = 'UTF-8' />
+    <meta name = 'viewport' content = 'width = device-width, initial-scale = 1.0' />
+    <title>Introduce myself</title>
+</head>
+<body>
+
+    <header>
+        <center>
+            <h1>นายณัฐวุฒิ นาดอน</h1>
+        </center>
+    </header>
+
+    <section>
+        <center>
+            <h2>โปรไฟล์ของฉัน</h2>
+            <img src = "C:\Users\Benz\OneDrive\Pictures\Benz\117998.jpg" alt = 'รูปโปรไฟล์' width ="300" />
+            <p>ชื่อเล่น เบ็นซ์ นะครับ ปกติชอบนอนดูหนัง เล่นเกมครับ (ถ้าว่าง)</p>
+            <p>ซึ่งปกติจะไม่ค่อยว่างครับ วันหยุดชอบไปทำงานมากกว่าอยู่บ้านเฉย ๆ วันหยุดจะวน ๆ อยู่แค่ ทำงานทำการบ้านครับ</p>
+            <p>อยากรู้จักผมเพิ่มเติม เชิญได้ที่ <a href = "https://www.instagram.com/benz.natthawut_/?__pwa=1" target = "_blank">Instagram</a> เลยครับ</p>
+        </center>
+        <hr>
+    </section>
+
+    <section>
+        <h3>แบบฟอร์มการติดต่อกลับ</h3>
+        <form action = "#" method = "post">
+            <div>
+                <label for = "fullname">ชื่อ - นามสกุล :</label>
+                <input type = "text" id = "fullname" name = "fullname" required />
+            </div>
+            <div>
+                <label for = "email">Email :</label>
+                <input type = "email" id = "email" name = "email" required />
+            </div>
+            <div>
+                <label for = "category">หมวดหมู่ข้อความ :</label>
+                <select name="category" id="category">
+                    <option value="" selected disabled>โปรดเลือกหมวดหมู่</option>
+                    <option value="descriptive">ข้อความบรรยาย</option>
+                    <option value="narrtive">ข้อความเล่าเรื่อง</option>
+                    <option value="expository">ข้อความอธิบาย</option>
+                    <option value="persuasive">ข้อความโน้มน้าว</option>
+                    <option value="other">อื่น ๆ</option>
+                </select>
+            </div>
+            <div>
+                <label for="massage">ข้อความ :</label><br>
+                <textarea name="massage" id="massage" row = "4" cols = "40"></textarea>
+            </div><br>
+            <div>
+                <button type = "submit">ส่งข้อมูล</button>
+            </div>
+    </section>
+</body>
+</html>
